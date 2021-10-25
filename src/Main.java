@@ -36,13 +36,6 @@ public class Main {
         return data;
     }
 
-    private long updateAverage(long oldTime, long newTime) {
-        if (oldTime != 0L) {
-            return (oldTime + newTime) / 2;
-        }
-        return newTime;
-    }
-
     public void run(int length, int numOfExec) {
         long seqAverage = 0L;
         long parAverage = 0L;
